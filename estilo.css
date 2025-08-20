@@ -1,4 +1,29 @@
 @import url('https://fonts.cdnfonts.com/css/eurostile');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Fondo negro para toda la página */
+    background-image: url('argyle.png'); /* Textura opcional */
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke; /* Color de texto predeterminado */
+}
+
+/* Añadimos un color diferente para los lados */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333; /* Color de fondo para los lados */
+    z-index: -1; /* Asegura que esté detrás del contenido */
+    margin: 0 10%;
+}
+
+/* Se ajusta el contenido de la página */
 .contenedor {
     text-align: center;
 }
@@ -9,27 +34,38 @@ p {
     color: whitesmoke;
     font-weight: bold;
 }
-footer a{
+
+footer a {
     font-family: 'Eurostile', sans-serif;
     font-size: 45px;
     color: whitesmoke;
     font-weight: bold;
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    border: 2px solid whitesmoke; /* Borde alrededor del enlace */
+    padding: 5px 10px; /* Espaciado interno para que el borde no quede pegado al texto */
+    border-radius: 5px; /* Bordes redondeados */
 }
+
+footer a:hover {
+    color: red;
+    border-color: red; /* Cambia el color del borde al pasar el mouse */
+}
+
 img {
     display: block;
     margin: 0 auto;
+    border: 5px solid whitesmoke; /* Borde alrededor de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    transition: border-color 0.3s; /* Animación suave para el borde */
 }
-body {
-    margin: 0;
-    padding: 0;
-    background-color: black; /* Fondo negro */
-    background-image: url('argyle.png'); /* Textura opcional */
+
+img:hover {
+    border-color: red; /* Cambia el borde a rojo cuando se pasa el mouse sobre la imagen */
 }
+
 footer {
     background-color: gray;
     margin: 0;
-    padding: 0;
+    padding: 20px; /* Espaciado alrededor del footer */
+    text-align: center; /* Centrar el contenido dentro del footer */
 }
-
-a:hover{color :red}
-img:hover{color: red}
