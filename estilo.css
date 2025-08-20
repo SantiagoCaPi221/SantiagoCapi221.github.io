@@ -9,6 +9,12 @@ p {
     color: whitesmoke;
     font-weight: bold;
 }
+footer a{
+    font-family: 'Eurostile', sans-serif;
+    font-size: 45px;
+    color: whitesmoke;
+    font-weight: bold;
+}
 img {
     display: block;
     margin: 0 auto;
