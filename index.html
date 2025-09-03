@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset = "utf-8">
-        <title> mi primera pagina web</title>
-        <link rel="stylesheet" href="estilo.css">
+        <title>KIBA1</title>
+        <meta  charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="style.css" rel="stylesheet">
     </head>
-    <body>
-        <div class = "contenedor">
-            <a href="https://es.wikipedia.org/wiki/Super_Smash_Bros.">
-                <img src="1_US.jpg" alt="imagen de prueba"/>
-            </a>
-            <p>Super smash bros</p>
-        </div>
 
-    </body>
-    <div id="footer">
-        <footer>
-            <p>contactos</p>
-            <a href="https://youtu.be/xvFZjo5PgG0?feature=shared">Envianos un Correo</a>
-        </footer>
-    </div>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Correo Electronico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">No Compartas tu correo con nadie</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div></div>
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+    </form>
 </html>

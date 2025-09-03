@@ -1,0 +1,30 @@
+:root {
+  --form-max-width: 1000px;
+  --form-margin: 20px auto;
+  --form-padding: 400px;
+  --form-border-color: #000000; /* más contraste */
+  --form-bg-color: #0d859b;    /* fondo blanco */
+  --form-font: 'Roboto', sans-serif; /*tipografia*/
+  --form-text-color: #fdf5e6; /*cambio de color*/
+}
+
+/* Estilos base del formulario */
+form {
+  max-width: var(--form-max-width);
+  margin: var(--form-margin);
+  padding: 2.5rem; /* más respirable */
+  border: 1px solid var(--form-border-color);
+  border-radius: 8px;
+  background-color: var(--form-bg-color);
+  font-family: var(--form-font);
+  color: var(--form-text-color);
+
+  /* Mejoras visuales */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+form:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
